@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>Leaflet Example Page</title>
+    
+<style>
+    body{
+        background-color: aliceblue;
+    }
+    #pagediv{
+        margin: auto;
+        width: 80%;
+        background-color: aliceblue;
+    }
+    #headerdiv{
+        background-color: beige;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 5px 0 5px 0;
+    }
+    #contentdiv{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 5px 15px 40px 15px;
+    }
+    
+    h1{
+        color: darkblue;
+        text-align: center;
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    }
+    h2{
+        color: lightblue;
+        text-align: center;
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    }
+    p{
+        color: red;
+        text-align: center;
+    }
+
+    p.bold{
+        font-weight: bold;
+    }
+    p.usual{
+        color: lightblue;
+        text-align: middle;
+    }
+    button{
+        margin:auto;
+        display:block;
+    }
+    table{
+        margin: auto;
+    }
+    ul{
+    width: 20%;
+    margin: auto;
+
+    }
+
+</style>
+</head>
+<body>
+<div id="pagediv">
+    <div id="headerdiv">
+    <h1>HTML heading</h1>
+    <h2>The excericise 2 with image and url</h2>
+    </div>
+    
+    <div id="contentdiv">
+
+<p id="demo">A Paragraph       
+    This whole page is occupied by yijin
+    </p>
+<button type="button" onclick="myFunction()">Button to Run Function</button>
+<button type="button" onclick="myFunction2()">reset</button>
+
+
+    <p>here is a <a href="http://www.ucl.ac.uk">link to ucl</a> below this is a image</p>
+        
+    <p><img src="StardewValley.png" alt="StardewValley" align = middle width="1000"/> </p>
+    
+    <h2>Lists and tables</h2>
+    <p class="usual">here is a list</p>
+    
+    <ul><li>list element here</li></ul>
+    <ul><li>another list element here</li></ul>
+    
+    <p class="usual">here is a table</p>
+    <table>
+    <tr><td>column 1</td><td>Column 2</td><td>Column 3</td></tr>
+    <tr><td>1</td><td>2</td><td>3</td></tr>
+    </table>
+    <p class="bold">This is a paragraph that belongs to the bold class.</p>
+    </div>
+    
+
+<script>
+function myFunction() {
+document.getElementById("demo").innerHTML = "Paragraph has changed content and style.";
+document.getElementById("demo").style.fontSize = "35px"; }
+    
+function myFunction2() {
+document.getElementById("demo").innerHTML = "Paragraph has changed content and style.";
+document.getElementById("demo").style.fontSize = "15px"; }
+</script>
+
+    <a href="commuting_flow.html">press to see the map</a>
+</div>
+</body>
+</html>
